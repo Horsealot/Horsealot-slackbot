@@ -1,0 +1,16 @@
+{
+  "name": "horsealot-slackbot",
+  "version": "1.0.0",
+  "description": "Horsealot talking robot",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thomas Desgrippes",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/web-api": "^5.0.1",
+    "amqplib": "^0.5.3",
+    "config": "^3.1.0"
+  }
+}
