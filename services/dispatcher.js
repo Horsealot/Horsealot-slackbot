@@ -3,9 +3,9 @@ var HorsealotProcessor = require("../processors/horsealot");
 module.exports = {
     dispatch: async (message) => {
         switch (message.action) {
-            case "newProSubscription":
+            case "sendMessageInChannel":
                 try {
-                    await HorsealotProcessor.newProSubscription(message);
+                    await HorsealotProcessor.sendMessageInChannel(message);
                 } catch (e) {
                     console.error(`[Dispatcher][${message.transactionId}] Exception ${e}`)
                 }

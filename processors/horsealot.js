@@ -1,7 +1,7 @@
 const webClient = require('../clients/slack');
 
 module.exports = {
-    newProSubscription: async (message) => {
+    sendMessageInChannel: async (message) => {
         const result = await webClient.channels.list();
 
         const activeChannel = result.channels.find((channel) => {

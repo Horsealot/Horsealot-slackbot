@@ -1,6 +1,7 @@
 const amqp = require('amqplib/callback_api');
 const config = require('config');
 const dispatcher = require('./dispatcher');
+const crypto = require('crypto');
 
 module.exports = {
     start: function() {
